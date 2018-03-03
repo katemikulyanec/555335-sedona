@@ -26,11 +26,13 @@
           <img src="http://placehold.it/150x100" alt="SEDONA">
           <img src="http://placehold.it/150x100" alt="Because Grand Canyon sucks!">
           </p>
-        </section class="intro-features">
+        </section>
+        <section class="intro-features">
         <p>
         <span>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</span>
         <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
        </p>
+       </section>
         <section class="features">
           <h1 class="visually-hidden">Приемущества</h1>
           <ul>
@@ -116,8 +118,30 @@
       </p>
     </footer>
     <section class="modal search-form">
-  <h2>Поиск гостиниц в Седоне</h2>
-  <!-- Здесь будет форма -->
+  <form>
+    <fieldset>
+      <legend>Поиск гостиниц в Седоне</legend>
+      <div>
+        <label for="arrive">Дата заезда:</label>
+        <input type="date" name="arrive" id="arrive">
+      </div>
+      <div>
+        <label for="leave">Дата Выезда:</label>
+        <input type="date" name="leave" id="leave">
+      </div>
+      <div>
+        <label for="adult">Взрослые:</label>
+        <input type="number" name="adult" id="adult">
+      </div>
+      <div>
+        <label for="child">Дети:</label>
+        <input type="number" name="child" id="child">
+      </div>
+      <div class="buttons">
+        <input type="submit" value="Найти">
+      </div>
+    </fieldset>
+  </form>
   <p>
   <a class="button"  href="catalog.html">Найти</a>
   </p>

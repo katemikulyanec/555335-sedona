@@ -20,9 +20,40 @@
        </header>
       <main class="container">
         <section class="filters">
-            <!-- Здесь будут формы -->
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form>
+        <fieldset>
+          <legend class="visually-hidden">Выбор жилья</legend>
+        <p>
+          <span>ИНФРАСТРУКТУРА:</span>
+          <input type="checkbox" name="infrastructure" id="pool" checked>
+          <label for="pool">БАССЕЙН</label>
+          <input type="checkbox" name="infrastructure" id="parking" >
+          <label for="parking">ПАРКОВКА</label>
+          <input type="checkbox" name="infrastructure" id="Wi-Fi">
+          <label for="Wi-Fi">Wi-Fi</label>
+        </p>
+        <p>
+          <span>Тип жилья:</span>
+          <input type="checkbox" name="type" id="hotel" checked>
+          <label for="hotel">ГостиницА</label>
+          <input type="checkbox" name="type" id="motel" >
+          <label for="motel">МОТЕЛЬ</label>
+          <input type="checkbox" name="type" id="appartments">
+          <label for="appartments">АПАРТАМЕНТЫ</label>
+        </p>
+        <p>
+          <span>Стоимость в сутки (Р):</span>
+            <!-- Здесь будет ползунок c диапазоном -->
+        </p>
+        <p>
+           <input type="submit" value="Показать">
+        </p>
+    </fieldset>
+    </form>
         </section>
         <section class="scale">
+          <h2 class="visually-hidden">Сотрировка</h2>
           <p>Найдено: 3</p>
           <p>СОРТИРОВКА:</p>
           <ul>
@@ -30,9 +61,13 @@
           <li>ПО ТИПУ</li>
           <li>ПО РЕЙТИНГУ</li>
           </ul>
+          <p>
+            <img src="http://placehold.it/150x100" alt="Вверх">
+            <img src="http://placehold.it/150x100" alt="Вниз">
+          </p>
         </section>
         <section class="hotels">
-          <h2 class="visually-hidden">Гостиницы<h2>
+          <h2 class="visually-hidden">Гостиницы</h2>
           <ul>
             <li class="hotels-item">
               <img src="http://placehold.it/150x100" alt="Amara Resort & Spa">
