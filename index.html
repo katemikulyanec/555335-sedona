@@ -7,9 +7,9 @@
   <body>
     <header class="main-header">
          <nav class="main-navigation">
-           <a class="main-header-logo">
-             <img src="http://placehold.it/150x100" alt="Логотип Седоны">
-           </a>
+           <p class="main-header-logo">
+             <img src="img\logo-sedona.png" alt="Логотип Седоны" width="137" height="70">
+           </p>
            <ul class="site-navigation">
              <li><a href="info.html">Информация</a></li>
              <li><a href="content.html">Фото и видео</a></li>
@@ -20,7 +20,15 @@
     </header>
     <main class="container">
         <section class="intro">
-          <img src="http://placehold.it/150x100" alt="Welcome">
+          <p>
+            <img src="img\welcome-to-the-gorgeous.png" alt="Welcome to the gorgeous" width="256" height="86">
+          </p>
+          <p>
+            <img src="img\Sedona.png" alt="sedona" width="458" height="78">
+          </p>
+          <p>
+            <img src="img\because-the-grand-canyon-sucks.png" alt="Because the Grand Canyon sucks" width="296" height="80">
+          </p>
         </section>
         <section class="features">
           <h2>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
@@ -35,7 +43,7 @@
                 </p>
               </div>
               <p>
-                 <img src="http://placehold.it/150x100" alt="Седона город">
+                 <img src="img\town.jpg" alt="Седона город" width="511" height="255">
               </p>
             </div>
             <ul>
@@ -57,7 +65,7 @@
           <section>
             <div>
               <p>
-                 <img src="http://placehold.it/150x100" alt="Мост дьявола">
+                 <img src="img\devil-bridge.jpg" alt="Мост дьявола" width="511" height="255">
               </p>
               <div class="feature-item blue">
                 <h3>ТАМ ЕСТЬ Мост дьявола</h3>
@@ -95,7 +103,10 @@
         <section class="map">
           <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <img src="http://placehold.it/150x100" alt="Карта">
+          <button type="button">Поиск гостиницы в Седоне</button>
+          <p>
+            <img src="img\map.jpg" alt="Карта" width="768" height="593">
+          </p>
         </section>
     </main>
     <footer class="main-footer">
@@ -103,18 +114,18 @@
           <a href="#" target="_blank">#visitSEDONA</a>
         </p>
         <ul class="footer-social">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+          <li><a class="social-button" href="#"><img src="img\twitter.svg" alt="TW" width="17" height="15"></a></li>
+          <li><a class="social-button" href="#"><img src="img\facebook.svg" alt="FB" width="12" height="22"></a></li>
+          <li><a class="social-button" href="#"><img src="img\youtube.svg" alt="YT" width="20" height="16"></a></li>
         </ul>
         <p class="footer-copyright">
-          <b>Website by</b> <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="html academy"></a>
+          <b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img\logo-academy.svg" alt="html academy" width="115" height="41"></a>
         </p>
     </footer>
     <section class="modal search-form">
       <form>
         <fieldset>
-          <legend>Поиск гостиниц в Седоне</legend>
+          <legend class="visually-hidden">Поиск гостиниц в Седоне</legend>
           <div>
             <label for="arrive">Дата заезда:</label>
             <input type="date" name="arrive" id="arrive">
