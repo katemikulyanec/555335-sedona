@@ -8,7 +8,7 @@
     <header class="main-header">
          <nav class="main-navigation">
            <p class="main-header-logo">
-             <img src="img\logo-sedona.png" alt="Логотип Седоны" width="137" height="70">
+             <img src="img/logo-sedona.png" alt="Седона" width="137" height="70">
            </p>
            <ul class="site-navigation">
              <li><a href="info.html">Информация</a></li>
@@ -20,17 +20,19 @@
     </header>
     <main class="container">
         <section class="intro">
+          <h2 class="visually-hidden">Welcome</h2>
           <p>
-            <img src="img\welcome-to-the-gorgeous.png" alt="Welcome to the gorgeous" width="256" height="86">
+            <img src="img/welcome-to-the-gorgeous.png" alt="Welcome to the gorgeous" width="256" height="86">
           </p>
           <p>
-            <img src="img\Sedona.png" alt="sedona" width="458" height="78">
+            <img src="img/Sedona.png" alt="sedona" width="458" height="78">
           </p>
           <p>
-            <img src="img\because-the-grand-canyon-sucks.png" alt="Because the Grand Canyon sucks" width="296" height="80">
+            <img src="img/because-the-grand-canyon-sucks.png" alt="Because the Grand Canyon sucks" width="296" height="80">
           </p>
         </section>
         <section class="features">
+          <h2 class="visually-hidden">Приемущества</h2>
           <h2>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <section>
@@ -43,7 +45,7 @@
                 </p>
               </div>
               <p>
-                 <img src="img\town.jpg" alt="Седона город" width="511" height="255">
+                 <img src="img/town.jpg" alt="Седона город" width="511" height="255">
               </p>
             </div>
             <ul>
@@ -65,7 +67,7 @@
           <section>
             <div>
               <p>
-                 <img src="img\devil-bridge.jpg" alt="Мост дьявола" width="511" height="255">
+                 <img src="img/devil-bridge.jpg" alt="Мост дьявола" width="511" height="255">
               </p>
               <div class="feature-item blue">
                 <h3>ТАМ ЕСТЬ Мост дьявола</h3>
@@ -105,7 +107,7 @@
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button type="button">Поиск гостиницы в Седоне</button>
           <p>
-            <img src="img\map.jpg" alt="Карта" width="768" height="593">
+            <img src="img/map.jpg" alt="Карта" width="768" height="593">
           </p>
         </section>
     </main>
@@ -114,15 +116,16 @@
           <a href="#" target="_blank">#visitSEDONA</a>
         </p>
         <ul class="footer-social">
-          <li><a class="social-button" href="#"><img src="img\twitter.svg" alt="TW" width="17" height="15"></a></li>
-          <li><a class="social-button" href="#"><img src="img\facebook.svg" alt="FB" width="12" height="22"></a></li>
-          <li><a class="social-button" href="#"><img src="img\youtube.svg" alt="YT" width="20" height="16"></a></li>
+          <li><a class="social-button" href="#" aria-label="Twitter"><img src="img/twitter.svg" alt="TW" width="17" height="15"></a></li>
+          <li><a class="social-button" href="#" aria-label="Facebook"><img src="img/facebook.svg" alt="FB" width="12" height="22"></a></li>
+          <li><a class="social-button" href="#" aria-label="Youtube"><img src="img/youtube.svg" alt="YT" width="20" height="16"></a></li>
         </ul>
         <p class="footer-copyright">
-          <b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img\logo-academy.svg" alt="html academy" width="115" height="41"></a>
+          <b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-academy.svg" alt="html academy" width="115" height="41"></a>
         </p>
     </footer>
     <section class="modal search-form">
+      <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
       <form>
         <fieldset>
           <legend class="visually-hidden">Поиск гостиниц в Седоне</legend>
@@ -136,11 +139,15 @@
           </div>
           <div>
             <label for="adult">Взрослые:</label>
-            <input type="number" name="adult" id="adult">
+            <input type="button" value="-">
+            <input name="adult" id="adult" type="text" value="1"/>
+            <input type="button" value="+">
           </div>
           <div>
             <label for="child">Дети:</label>
-            <input type="number" name="child" id="child">
+            <input type="button" value="-">
+            <input name="child" id="child" type="text" value="1"/>
+            <input type="button" value="+">
           </div>
           <div class="buttons">
             <input type="submit" value="Найти">
