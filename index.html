@@ -25,7 +25,7 @@
             <img src="img/welcome-to-the-gorgeous.png" alt="Welcome to the gorgeous" width="256" height="86">
           </p>
           <p>
-            <img src="img/Sedona.png" alt="sedona" width="458" height="78">
+            <img src="img/sedona.png" alt="sedona" width="458" height="78">
           </p>
           <p>
             <img src="img/because-the-grand-canyon-sucks.png" alt="Because the Grand Canyon sucks" width="296" height="80">
@@ -33,16 +33,14 @@
         </section>
         <section class="features">
           <h2 class="visually-hidden">Приемущества</h2>
-          <h2>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <section>
             <div>
               <div class="feature-item blue">
-                <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
-                <p>
-                  <span>— №1 —</span>
-                  <span>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</span>
-                </p>
+                <h3>Настоящий городок</h3>
+                <p>— №1 —</p>
+                <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <p>
                  <img src="img/town.jpg" alt="Седона город" width="511" height="255">
@@ -55,11 +53,11 @@
               </li>
               <li class="feature-item white">
                 <h3>ЕДА</h3>
-                <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
-                Вы НЕ разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер,
+                Вы не разочаруетесь!</p>
               </li>
               <li class="feature-item white">
-                <h3>СУВЕНИРЫ</h3>
+                <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -70,46 +68,65 @@
                  <img src="img/devil-bridge.jpg" alt="Мост дьявола" width="511" height="255">
               </p>
               <div class="feature-item blue">
-                <h3>ТАМ ЕСТЬ Мост дьявола</h3>
-                <p>
-                  <span>— №2 —</span>
-                  <span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
-                </p>
+                <h3>Там есть Мост дьявола</h3>
+                <p>— №2 —</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
             </div>
             <ul>
               <li class="feature-item gray">
                 <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-                <p>
-                  <span>— №3 —</span>
-                  <span>ВСЕ достопримечательности находятся очень близко</span>
-                </p>
+                <p>— №3 —</p>
+                <p>Все достопримечательности находятся очень близко</p>
               </li>
               <li class="feature-item gray">
-                <h3>КРАСИВАЯ ДОРОГА</h3>
-                <p>
-                  <span>— №4 —</span>
-                  <span>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</span>
-                </p>
+                <h3>Красивая дорога</h3>
+                <p>— №4 —</p>
+                <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
               </li>
               <li class="feature-item gray">
                 <h3>МАЛО ТУРИСТОВ</h3>
-                <p>
-                  <span>— №5 —</span>
-                  <span>Большинство едет в гранд каньон и толпится там</span>
-                </p>
+                <span>— №5 —</span>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
               </li>
             </ul>
           </section>
         </section>
         <section class="map">
-          <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button type="button">Поиск гостиницы в Седоне</button>
-          <p>
-            <img src="img/map.jpg" alt="Карта" width="768" height="593">
-          </p>
-        </section>
+          <form  method="get">
+            <div>
+              <label for="arrive">Дата заезда:</label>
+              <input type="date" name="arrive" id="arrive">
+              <button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button>
+            </div>
+            <div>
+              <label for="leave">Дата Выезда:</label>
+              <input type="date" name="leave" id="leave">
+              <button type="button"><img src="img/calendar.svg" alt="Календарь" width="21" height="22"></button>
+            </div>
+            <div>
+              <label for="adult">Взрослые:</label>
+              <input type="button" value="-">
+              <input name="adult" id="adult" type="text" value="1"/>
+              <input type="button" value="+">
+            </div>
+            <div>
+              <label for="child">Дети:</label>
+              <input type="button" value="-">
+              <input name="child" id="child" type="text" value="1"/>
+              <input type="button" value="+">
+            </div>
+            <div class="buttons">
+              <input type="submit" value="Найти">
+            </div>
+        </form>
+        <p>
+          <img src="img/map.jpg" alt="Карта" width="768" height="593">
+        </p>
+      </section>
     </main>
     <footer class="main-footer">
         <p class="footer-hashtag">
@@ -124,36 +141,5 @@
           <b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-academy.svg" alt="html academy" width="115" height="41"></a>
         </p>
     </footer>
-    <section class="modal search-form">
-      <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
-      <form>
-        <fieldset>
-          <legend class="visually-hidden">Поиск гостиниц в Седоне</legend>
-          <div>
-            <label for="arrive">Дата заезда:</label>
-            <input type="date" name="arrive" id="arrive">
-          </div>
-          <div>
-            <label for="leave">Дата Выезда:</label>
-            <input type="date" name="leave" id="leave">
-          </div>
-          <div>
-            <label for="adult">Взрослые:</label>
-            <input type="button" value="-">
-            <input name="adult" id="adult" type="text" value="1"/>
-            <input type="button" value="+">
-          </div>
-          <div>
-            <label for="child">Дети:</label>
-            <input type="button" value="-">
-            <input name="child" id="child" type="text" value="1"/>
-            <input type="button" value="+">
-          </div>
-          <div class="buttons">
-            <input type="submit" value="Найти">
-          </div>
-        </fieldset>
-      </form>
-    </section>
   </body>
 </html>
