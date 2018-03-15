@@ -1,0 +1,407 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+header,
+main,
+footer {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+  font-weight: 700;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation .active {
+  color: #766357;
+}
+
+/* index */
+
+.intro {
+  background-image: url("../img/background-mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro p {
+  text-align: center;
+}
+
+.features {
+  text-align: center;
+}
+
+.features h2,
+.features h3 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.features li {
+  list-style: none;
+}
+
+.feature-item.blue,
+.feature-item.blue h3 {
+  background-color: #81b3d2;
+  color: #ffffff;
+  line-height: 21px;
+}
+
+.feature-item.gray {
+  background-color: #eeeeee;
+}
+
+.map {
+  text-align: center;
+}
+
+.map h2 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.map form {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+button.search {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #766357;
+    border: none;
+}
+
+button.search:hover,
+button.search:focus {
+  background-color: #604e43;
+}
+
+button.search:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.form-button {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bolder;
+  text-align: center;
+  color: #a9a9a9;
+  fill: #a9a9a9;
+}
+
+.form-button:hover,
+.form-button:focus {
+  color: #000000;
+  fill: #000000;
+}
+
+.form-button:active {
+  color: #81b3d2;
+  fill: #81b3d2;
+}
+
+.hotel-search input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.hotel-search input:hover {
+  font: inherit;
+  background-color: #ebebeb;
+  border: 0;
+}
+
+.hotel-search input:focus {
+  font: inherit;
+  background-color: #ffffff;
+  border: 3px solid #e5e5e5;
+}
+
+button.submit {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+    border: none;
+}
+
+button.submit:hover,
+button.submit:focus {
+  background-color: #669ec0;
+}
+
+button.submit:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+/* catalog */
+
+.filters {
+  background-image: url("../img/background-mountains-catalog.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.filters legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters li {
+  list-style: none;
+}
+
+button.filter-button {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+button.filter-button:hover,
+button.filter-button:focus {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+section.scale {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.scale .find {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.scale li {
+  list-style: none;
+}
+
+.scale a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.scale a:hover,
+.scale a:focus {
+  color: #81b3d2;
+}
+
+.scale a:active {
+  color: #000000;
+  border: none;
+}
+
+.direction a {
+  fill: #cacaca;
+  border: none;
+}
+
+.direction a:hover,
+.direction a:focus {
+  fill: #231f20;
+  border: none;
+}
+
+.direction a:active {
+  fill: #81b3d2;
+  border: none;
+}
+
+.hotels ul {
+  list-style: none;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.hotels-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+a.more {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+    border: none;
+}
+
+a.more:hover,
+a.more:focus {
+  background-color: #669ec0;
+}
+
+a.more:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+a.book {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #766357;
+    border: none;
+}
+
+a.book:hover,
+a.book:focus {
+  background-color: #604e43;
+}
+
+a.book:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+p.rate {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+/* footer */
+
+.main-footer {
+  color: #000000;
+  background-color:rgba(255, 255, 255, 0.9);
+}
+
+.footer-hashtag a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-hashtag a:hover,
+.footer-hashtag a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social li {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer-copyright a {
+  fill: #231f20;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  fill: #81b3d2;
+}
+
+.footer-copyright a:active {
+  fill: #bdbbbc;
+}
