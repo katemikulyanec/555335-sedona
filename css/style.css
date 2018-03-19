@@ -144,7 +144,7 @@ footer {
   line-height: 26px;
 }
 
-div.advantage {
+.advantage {
   width: 490px;
   margin: 0 auto;
   padding: 30px;
@@ -178,7 +178,6 @@ div.advantage {
 li.feature-item {
   width: 33.33%;
   padding: 58px;
-
 }
 
 .features ul {
@@ -242,7 +241,7 @@ li.feature-item {
   text-align: justify;
 }
 
-button.search {
+.search {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -256,13 +255,13 @@ button.search {
     margin-left: 317px;
 }
 
-button.search:hover,
-button.search:focus {
+.search:hover,
+.search:focus {
   background-color: #604e43;
   border: none;
 }
 
-button.search:active {
+.search:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
   border: none;
@@ -358,7 +357,7 @@ button.search:active {
   background-color: #f2f2f2;
 }
 
-button.submit {
+.submit {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -373,17 +372,17 @@ button.submit {
     padding: 15px;
 }
 
-button.submit:hover,
-button.submit:focus {
+.submit:hover,
+.submit:focus {
   background-color: #669ec0;
 }
 
-button.submit:active {
+.submit:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3)
 }
 
-p.map-image {
+.map-image {
   margin: 0;
 }
 
@@ -402,10 +401,10 @@ p.map-image {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
-  padding-left: 0 70px;
+  padding: 0 70px;
 }
 
-form.filter {
+.filter {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
@@ -433,11 +432,11 @@ form.filter {
   padding-left: 0;
 }
 
-div.price-send {
+.price-send {
   width: 320px;
 }
 
-div.output-price {
+.output-price {
   display: flex;
   width: 305px;
   border: 2px solid #ffffff;
@@ -585,16 +584,16 @@ li.hotels-item {
   width: 33.33%;
 }
 
-p.price {
+.price {
   margin-top: 7px;
 }
 
-p.buttons {
+.buttons {
   margin: 0;
   margin-bottom: 10px;
 }
 
-a.more {
+.more {
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -609,17 +608,17 @@ a.more {
     padding: 5px 15px;
 }
 
-a.more:hover,
-a.more:focus {
+.more:hover,
+.more:focus {
   background-color: #669ec0;
 }
 
-a.more:active {
+.more:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3)
 }
 
-a.book {
+.book {
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -633,22 +632,22 @@ a.book {
     padding: 5px 15px;
 }
 
-a.book:hover,
-a.book:focus {
+.book:hover,
+.book:focus {
   background-color: #604e43;
 }
 
-a.book:active {
+.book:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3)
 }
 
-p.stars {
+.stars {
   margin-bottom: 40px;
   text-align: right;
 }
 
-p.rate {
+.rate {
   display: inline-block;
   float: right;
   color: #666666;
@@ -660,6 +659,9 @@ p.rate {
 
 /* footer */
 
+footer {
+  padding: 0 70px;
+}
 
 .main-footer {
   color: #000000;
