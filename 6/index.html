@@ -108,7 +108,7 @@
           </div>
           <button type="button" class="search">Поиск гостиницы в Седоне</button>
           <form class="hotel-search" method="get">
-            <div class="date">
+            <p class="date">
               <label for="arrive">Дата заезда:</label>
               <input type="date" name="arrive" id="arrive">
               <button class="form-button" type="button">
@@ -132,8 +132,8 @@
               	 <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
                </svg>
              </button>
-            </div>
-            <div class="date">
+            </p>
+            <p class="date">
               <label for="leave">Дата Выезда:</label>
               <input type="date" name="leave" id="leave">
               <button class="form-button" type="button">
@@ -157,22 +157,24 @@
               	 <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
                </svg>
              </button>
-            </div>
-            <div class="half-width adult">
-              <label for="adult">Взрослые:</label>
-              <input type="button" class="form-button" value="–">
-              <input name="adult" id="adult" type="text" value="1"/>
-              <input type="button" class="form-button" value="+">
-            </div>
-            <div class="half-width child">
-              <label for="child">Дети:</label>
-              <input type="button" class="form-button" value="–">
-              <input name="child" id="child" type="text" value="1"/>
-              <input type="button" class="form-button" value="+">
-            </div>
-            <div class="buttons search-form">
+            </p>
+            <p class="people">
+              <p class="half-width adult">
+                <label for="adult">Взрослые:</label>
+                <input type="button" class="form-button" value="–">
+                <input name="adult" id="adult" type="text" value="1"/>
+                <input type="button" class="form-button" value="+">
+              </p>
+              <p class="half-width child">
+                <label for="child">Дети:</label>
+                <input type="button" class="form-button" value="–">
+                <input name="child" id="child" type="text" value="1"/>
+                <input type="button" class="form-button" value="+">
+              </p>
+            </p>
+            <p class="buttons search-form">
               <button type="button" class="submit">Найти</button>
-            </div>
+            </p>
         </form>
         <p class="map-image">
           <img src="img/map.jpg" alt="Карта" width="768" height="593">

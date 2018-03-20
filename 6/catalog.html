@@ -26,80 +26,86 @@
       <section class="filters">
         <h2 class="visually-hidden">Выбор жилья</h2>
         <form class="filter" method="get">
-          <fieldset>
-            <legend>Инфрастуктура:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input type="checkbox" name="infrastructure" id="pool" checked>
-                  <label for="pool">Бассейн</label>
-                </li>
-                <li class="filter-option">
-                  <input type="checkbox" name="infrastructure" id="parking" >
-                  <label for="parking">Парковка</label>
-                </li>
-                <li class="filter-option">
-                  <input type="checkbox" name="infrastructure" id="Wi-Fi">
-                  <label for="Wi-Fi">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
+          <div class="facilities">
             <fieldset>
-              <legend>Тип жилья:</legend>
+              <legend>Инфрастуктура:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input type="checkbox" name="type" id="hotel" checked>
-                    <label for="hotel">Гостиница</label>
+                    <input type="checkbox" name="infrastructure" id="pool" checked>
+                    <label for="pool">Бассейн</label>
                   </li>
                   <li class="filter-option">
-                    <input type="checkbox" name="type" id="motel" >
-                    <label for="motel">Мотель</label>
+                    <input type="checkbox" name="infrastructure" id="parking" >
+                    <label for="parking">Парковка</label>
                   </li>
                   <li class="filter-option">
-                    <input type="checkbox" name="type" id="appartments">
-                    <label for="appartments">Апартименты</label>
+                    <input type="checkbox" name="infrastructure" id="Wi-Fi">
+                    <label for="Wi-Fi">Wi-Fi</label>
                   </li>
                 </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Тип жилья:</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input type="checkbox" name="type" id="hotel" checked>
+                      <label for="hotel">Гостиница</label>
+                    </li>
+                    <li class="filter-option">
+                      <input type="checkbox" name="type" id="motel" >
+                      <label for="motel">Мотель</label>
+                    </li>
+                    <li class="filter-option">
+                      <input type="checkbox" name="type" id="appartments">
+                      <label for="appartments">Апартаменты</label>
+                    </li>
+                  </ul>
             </fieldset>
-            <div class="price-send">
-            <fieldset oninput="minprice.value=price.value">
+          </div>
+            <fieldset class="filter-range">
               <legend>Стоимость в сутки (Р):</legend>
-                <div class="output-price">
-                  <p>От <output name="minprice" id="minprice">0</output></p>
-                  <p>До <output name="maxprice" id="maxprice">3000</output></p>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                 </div>
-                <div>
-                  <input type="range" name="price" id="price" min="0" max="5000" step="1">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
                 </div>
+                <button type="submit" class="filter-button">Показать</button>
             </fieldset>
-              <button type="submit" class="filter-button">Показать</button>
-            </div>
         </form>
       </section>
       <section class="scale">
-          <h2 class="visually-hidden">Сотрировка</h2>
-          <div class="find">Найдено: <span>3</span></div>
-          <div class="assortment">
-          <p>Сортировка:</p>
-          <ul>
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по рейтингу</a></li>
-          </ul>
+        <h2 class="visually-hidden">Сотрировка</h2>
+          <div class="sort-n-find">
+            <p class="find">Найдено: <span>3</span></p>
+            <div class="assortment">
+              <p>Сортировка:</p>
+                <ul>
+                  <li><a href="#">по цене</a></li>
+                  <li><a href="#">по типу</a></li>
+                  <li><a href="#">по рейтингу</a></li>
+                </ul>
+            </div>
           </div>
           <div class="direction">
             <a href="#" aria-label="По возрастанию">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+          	   width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                <polygon points="5.5,0 0,10 11,10 "/>
-              </svg>
-            </a>
-            <a href="#" aria-label="По убыванию">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-               <polyline points="5.5,10 0,0 11,0 "/>
-              </svg>
-            </a>
-          </div>
+             </svg>
+           </a>
+           <a href="#" aria-label="По убыванию">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+             <polyline points="5.5,10 0,0 11,0 "/>
+            </svg>
+          </a>
+        </div>
       </section>
       <section class="hotels">
         <h2 class="visually-hidden">Жилье</h2>
