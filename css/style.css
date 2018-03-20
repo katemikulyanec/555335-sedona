@@ -36,8 +36,11 @@ footer {
 
 
 .main-navigation {
+  position: relative;
   font-size: 14px;
   line-height: 26px;
+  background-color: #ffffff;
+  padding: 15px 70px;
 }
 
 .main-header-logo {
@@ -45,6 +48,7 @@ footer {
   margin: auto;
   width: 138px;
   height: 70px;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -60,15 +64,11 @@ footer {
   display: flex;
   justify-content: space-between;
   color: #000000;
-  background-color: #ffffff;
-  padding: 0 70px;
 }
 
 .site-navigation li {
   width: 240px;
-  padding: 15px;
 }
-
 
 .site-navigation li:first-child,
 .site-navigation li:nth-child(2) {
@@ -110,12 +110,13 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
 }
 
 .intro p {
   text-align: center;
+  margin: 30px;
 }
 
 .intro::after {
@@ -162,6 +163,7 @@ footer {
 }
 
 .image {
+  box-sizing: border-box;
   height: 256px;
   width: 800px;
   overflow: hidden;
@@ -169,15 +171,16 @@ footer {
 
 .image img {
   width: 100%;
-  height: 256px;
+  height: 100%;
   margin: 0;
   overflow: hidden;
   object-fit: cover;
 }
 
 li.feature-item {
-  width: 33.33%;
-  padding: 58px;
+  box-sizing: border-box;
+  width: 400px;
+  padding: 60px;
 }
 
 .features ul {
@@ -192,10 +195,12 @@ li.feature-item {
 }
 
 .feature-item.blue {
+  box-sizing: border-box;
+  vertical-align: middle;
   background-color: #81b3d2;
   line-height: 21px;
   width: 400px;
-  padding: 40px;
+  padding: 49px 60px;
 }
 
 .feature-item.blue h3,
@@ -207,6 +212,9 @@ li.feature-item {
   background-color: #eeeeee;
 }
 
+.map {
+  position: relative;
+}
 
 .map-intro {
   text-align: center;
@@ -221,7 +229,6 @@ li.feature-item {
   font-weight: 700;
   line-height: 36px;
 }
-
 
 .map form {
   background-color: #ffffff;
@@ -242,17 +249,18 @@ li.feature-item {
 }
 
 .search {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    background-color: #766357;
-    border: none;
-    min-width: 565px;
-    padding: 25px;
-    margin-left: 317px;
+  display: block;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+  min-width: 565px;
+  padding: 25px;
+  margin: 0 auto;
 }
 
 .search:hover,
@@ -281,9 +289,11 @@ li.feature-item {
   margin-right: 18px;
 }
 
-.hotel-search div {
+.hotel-search p {
   display: inline-block;
   float: left;
+  margin: 0;
+  padding: 0;
 }
 
 .date button {
@@ -294,7 +304,9 @@ li.feature-item {
   margin: 0;
 }
 
+
 .half-width {
+  box-sizing: border-box;
   width: 50%;
 }
 
@@ -401,24 +413,24 @@ li.feature-item {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
-  padding: 0 70px;
+  padding: 15px 70px;
 }
 
 .filter {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 10px;
 }
 
 .filters fieldset {
-  width: 272px;
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filters legend {
   font-size: 16px;
   font-weight: 700;
+  padding: 10px 0;
 }
 
 .filters ul {
@@ -428,66 +440,153 @@ li.feature-item {
 
 .filters li {
   list-style: none;
-  padding: 14px;
-  padding-left: 0;
+  padding: 14px 0;
 }
 
-.price-send {
+.filter input {
+  cursor: pointer;
+}
+
+.facilities {
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.filter-range {
   width: 320px;
 }
 
-.output-price {
+.price-controls {
   display: flex;
-  width: 305px;
+  position: relative;
+  height: 35px;
+  margin-bottom: 20px;
   border: 2px solid #ffffff;
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  border-radius: 2px;
+  font-size: 0;
 }
 
-.output-price p {
-  width: 160px;
-  text-align: center;
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
   margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
 }
 
-input[type="range"] {
-  margin: 5px;
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
 }
 
 button.filter-button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: transparent;
+  background: transparent;
   border: 2px solid #ffffff;
-  width: 139px;
-  height: 35px;
-  margin-top: 10px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 button.filter-button:hover,
 button.filter-button:focus {
   background-color: #ffffff;
   color: #000000;
-  border: none;
 }
 
 section.scale {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 15px 70px;
+  padding: 30px 70px;
+}
+
+.sort-n-find {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 520px;
 }
 
 .scale .find {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.assortment {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 
@@ -495,14 +594,23 @@ section.scale {
   display: flex;
 }
 
-.scale div {
-  float: left;
+.assortment {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.assortment p {
+  padding: 0;
+  margin: 0;
 }
 
 .assortment ul {
   display: flex;
   justify-content: space-between;
-  width: 250px;
+  width: 240px;
+  padding: 0;
+  margin: 0;
 }
 
 .scale li {
@@ -547,6 +655,10 @@ section.scale {
   border: none;
 }
 
+.hotels {
+  padding: 0 70px;
+}
+
 .hotels ul {
   list-style: none;
   margin: 0;
@@ -565,12 +677,15 @@ li.hotels-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 12px 70px;
+  padding: 30px 0;
   margin: 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-item .hotel-information {
   display: flex;
+  align-items: center;
   float: left;
   width: 66.66%;
 }
@@ -585,13 +700,9 @@ li.hotels-item {
 }
 
 .price {
-  margin-top: 7px;
+  margin: 10px 0;
 }
 
-.buttons {
-  margin: 0;
-  margin-bottom: 10px;
-}
 
 .more {
     font-size: 14px;
@@ -643,6 +754,7 @@ li.hotels-item {
 }
 
 .stars {
+  margin: 0;
   margin-bottom: 40px;
   text-align: right;
 }
@@ -696,44 +808,40 @@ footer {
   text-decoration: none;
 }
 
+
 .footer-social {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
   padding: 0;
 }
 
 .footer-social li {
   list-style: none;
-  vertical-align: middle;
-  margin: 2px;
 }
 
-.footer-social a {
-  display: inline-block;
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
 }
 
-.footer-social li:first-child a {
-  padding: 16.5px 15px;
-}
-
-.footer-social li:nth-child(2) a {
-  padding: 13px 17px;
-}
-
-.footer-social li:last-child a {
-  padding: 16px 13px;
-}
-
-.footer-social a:hover,
-.footer-social a:focus {
+.social-button:hover,
+.social-button:focus {
   background-color: #669ec0;
 }
 
-.footer-social a:active {
+.social-button:active {
   background-color: #5496bd;
+}
+
+.social-button:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
