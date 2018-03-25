@@ -17,6 +17,10 @@ footer {
   margin: 0 auto;
 }
 
+main {
+  display: block;
+}
+
 header {
   -webkit-box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
           box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
